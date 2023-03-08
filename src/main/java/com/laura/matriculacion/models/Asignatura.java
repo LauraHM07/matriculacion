@@ -13,8 +13,8 @@ public class Asignatura {
     private String codigo;
     private String descripcion;
 
-    @ManyToMany(mappedBy = "asignaturas")
-    private List<Alumno> alumnos;
+    /*@ManyToMany(mappedBy = "asignaturas")
+    private List<Alumno> alumnos;*/
 
     public Asignatura() {
     }
@@ -39,13 +39,13 @@ public class Asignatura {
         this.descripcion = descripcion;
     }
 
-    public List<Alumno> getAlumno() {
+    /*public List<Alumno> getAlumno() {
         return alumnos;
     }
 
     public void setAlumnos(List<Alumno> alumnos) {
         this.alumnos = alumnos;
-    }
+    }*/
 
     @Override
     public int hashCode() {
